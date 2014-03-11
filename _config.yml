@@ -1,6 +1,7 @@
-name: Nuaj
+name: Majestic Homes
 markdown: redcarpet
 pygments: true
-phone_number: 1-226-214-3223
-phone_numberTOR: 1-647-497-7075
-phone_numberMON: 1-438-899-9125
+phone_number: 519-729-2728
+mailing_address: 55 Newcastle Drive Kitchener, ON N2R 1X2
+color_blue: "#002366"
+color_gold: "#cfb550"
