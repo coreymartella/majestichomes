@@ -1,0 +1,21 @@
+.affix {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  /*left: 0;*/
+  margin: 0;
+  /*width: 100%;*/
+}
+.navbar {
+  background: #222;
+}
+.navbar-inner {
+  margin: 0 auto;
+  float: none;
+  display: table;
+  text-align: center;
+}
+
+.affix .row-nav {
+  margin: 0;
+}

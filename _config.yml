@@ -2,6 +2,7 @@ name: Majestic Homes
 markdown: redcarpet
 pygments: true
 phone_number: 519-729-2728
+email: info@majestichomes.ca
 mailing_address: 55 Newcastle Drive Kitchener, ON N2R 1X2
-color_blue: "#002366"
-color_gold: "#cfb550"
+blue: "#002366"
+gold: "#cfb550"

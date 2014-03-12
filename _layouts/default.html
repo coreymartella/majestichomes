@@ -11,8 +11,9 @@
 <link href="css/style.css" rel="stylesheet">
 <link href="css/camera.css" rel="stylesheet">
 <link href="css/icons.css" rel="stylesheet">
-<link href="css/skin-orange.css" rel="stylesheet">
+<link href="css/skin-majestic.css" rel="stylesheet">
 <link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/overrides.css" rel="stylesheet">
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -24,7 +25,7 @@
 <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
 <link rel="shortcut icon" href="img/ico/favicon.png">
 </head>
-<body class="boxed">
+<body class="boxed" data-spy="scroll" data-target=".navbar">
 <div class="body">
   <!-- Navigation -->
   <header>
@@ -34,76 +35,43 @@
         <h1 class="brandlogo"><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
         <div class="topinfo">
           <ul class="social-icons list-soc">
-            <li><a href="#"><i class="icon-facebook"></i></a></li>
-            <li><a href="#"><i class="icon-twitter"></i></a></li>
-            <li><a href="#"><i class="icon-linkedin"></i></a></li>
-            <li><a href="#"><i class="icon-google-plus"></i></a></li>
-            <li><a href="#"><i class="icon-pinterest"></i></a></li>
+            <li><a href="http://facebook.com/majestichomes.ca"><i class="icon-facebook"></i></a></li>
+            <!-- <li><a href="#"><i class="icon-twitter"></i></a></li> -->
+            <!-- <li><a href="#"><i class="icon-linkedin"></i></a></li> -->
+            <!-- <li><a href="#"><i class="icon-google-plus"></i></a></li> -->
+            <!-- <li><a href="#"><i class="icon-pinterest"></i></a></li> -->
           </ul>
           <div class="infophone">
             <a href="tel:1-{{ site.phone_number }}">
-              <i class="icon-phone"></i> Tel:
+              <i class="icon-phone"></i>
               {{ site.phone_number }}
+            </a>
+            <br>
+            <a href="mailto:{{ site.email }}">
+              <i class="icon-envelope"></i>
+              {{ site.email }}
             </a>
           </div>
           <div class="infoaddress">
              {{ site.mailing_address }}
           </div>
         </div>
-        <div class="clearfix">
-        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  <div class="container clearfix" data-spy="affix" data-offset-top="230">
+    <div class="row-fluid">
+      <div class="span12">
         <div class="row-nav navbar">
           <div class="navbar-inner">
             <ul id="nav" class="nav">
-              <li class="active selected"><a href="index.html">Home</a></li>
+              <li><a href="#about_us">About Us</a></li>
               <li class="divider-vertical"></li>
-              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Templates <b class="caret"></b></a>
-              <ul class="dropdown-menu js-activated" style="display: none;">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="faq.html">Knowledge Base</a></li>
-                <li><a href="icons.html">Icons</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="404.html">404 Error</a></li>
-                <!--.dropdown-->
-              </ul>
-              </li>
+              <li><a href="#portfolio">Portfolio</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="elements.html">Elements</a></li>
-              <li class="divider-vertical"></li>
-              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Layouts <b class="caret"></b></a>
-              <ul class="dropdown-menu js-activated" style="display: none;">
-                <li><a href="columns.html">Columns</a></li>
-                <li><a href="masonry4.html">Masonry 4</a></li>
-                <li><a href="masonry3.html">Masonry 3</a></li>
-                <li><a href="masonry2.html">Masonry 2</a></li>
-                <!--.dropdown-->
-              </ul>
-              </li>
-              <li class="divider-vertical"></li>
-              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-              <ul class="dropdown-menu js-activated" style="display: none;">
-                <li><a href="portfolio.html">Portfolio List</a></li>
-                <li><a href="projectdetail.html">Project Detail</a></li>
-                <!--.dropdown-->
-              </ul>
-              </li>
-              <li class="divider-vertical"></li>
-              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-              <ul class="dropdown-menu js-activated" style="display: none;">
-                <li><a href="bloghome.html">Blog Home</a></li>
-                <li><a href="blogsingle.html">Single Post</a></li>
-                <!--.dropdown-->
-              </ul>
-              </li>
-              <li class="divider-vertical"></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#community">Community</a></li>
               <li class="divider-vertical"></li>
             </ul>
-            <form id="search" action="#" method="GET">
-                <input type="text" onfocus="if(this.value =='Enter search keywords here...' ) this.value=''" onblur="if(this.value=='') this.value='Enter search keywords here...'" value="Enter search keywords here..." name="s">
-                <a href="#"></a>
-            </form>
           </div>
         </div>
       </div>
@@ -115,7 +83,6 @@
   </div>
   <!-- /end header -->
   <div class="container">
-    CONTENT!!!!!!!!!!!!!!!!!
     {{content}}
   </div>
   <!-- FOOTER BEGIN
@@ -132,12 +99,6 @@
           <hr>
           <p>
              Introducing a premium HTML5 & CSS3 template for multipurpose use. Responsive layout, professional design & lots of features.
-          </p>
-          <p>
-             Made with love by  <a href="http://www.wowthemes.net">WowThemes.net</a> .
-          </p>
-          <p class="footerlogo">
-             Biscaya
           </p>
         </div>
         <div class="span4">
@@ -293,6 +254,7 @@ $(window).load(function(){
 <!-- Call opacity on hover images from recent news-->
 <script type="text/javascript">
 $(document).ready(function(){
+    $('.nav_affix').affix({offset: {top: 230}})
     $("img.imgOpa").hover(function() {
       $(this).stop().animate({opacity: "0.6"}, 'slow');
     },
