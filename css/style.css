@@ -1,12 +1,12 @@
 /* =========================================================== */
-/* Common /* 
+/* Common /*
 ============================================================== */
 .container,.navbar-static-top .container,.navbar-fixed-top .container,.navbar-fixed-bottom .container {
 	max-width:940px;
 }
 
-body.boxed {	
-	background-image: url(../img/bg/pic2.jpg);
+body.boxed {
+	background-image: url(/img/bg/pic1.jpg);
 	background-attachment: fixed;
 	background-position: 49% 50%;
 	background-repeat: no-repeat;
@@ -41,7 +41,7 @@ body.boxed div.body {
 	left:0;
 	right:0;
 	bottom:0;
-		background:url(../img/bg/pattern.png) repeat;
+		background:url(/img/bg/pattern.png) repeat;
 	background-attachment:fixed;
 		z-index:0;
 }
@@ -157,7 +157,7 @@ h1.small {
 	text-transform:uppercase;
 }
 .headerdivider {
-	background:url(../img/dots.gif) repeat;
+	background:url(/img/dots.gif) repeat;
 	height:7px;
 	margin-bottom:20px;
 	opacity:0.4;
@@ -224,7 +224,7 @@ padding-right:20px;
 padding-left:20px;
 }
 iframe {border:0px;}
-/*================================================== * 
+/*================================================== *
 TinyNav
 * ===============================================*/
 .tinynav {
@@ -247,7 +247,7 @@ display: none
 	}
 }
 /* =========================================================== */
-/* Header /* 
+/* Header /*
 ============================================================== */
 header {
 	padding:0;
@@ -355,7 +355,7 @@ ul {
 	-webkit-box-shadow:none;
 	-moz-box-shadow:none;
 	box-shadow:none;
-	color:#777;	
+	color:#777;
 	margin:0;
 	padding:10px;
 	height:50px;
@@ -377,7 +377,7 @@ ul {
 #search a {
 	display:inline-block;
 	float:left;
-	background:#e7402f url(../img/part-btn-search.png) no-repeat center center;
+	background:#e7402f url(/img/part-btn-search.png) no-repeat center center;
 	width:50px;
 	height:50px;
 	-webkit-transition:all 0.3s ease;
@@ -471,7 +471,7 @@ ul.social-icons li a:hover {
 	color: #fff;
 }
 /* =========================================================== */
-/* Footer /* 
+/* Footer /*
 ============================================================== */
 .footer a {
 	color:#fff;
@@ -484,7 +484,7 @@ ul.social-icons li a:hover {
 ul.footermenu li a:hover,.footer a:hover {
 	opacity:0.7;
 }
-.footer {	
+.footer {
 	padding-top:30px;
 	padding-bottom:30px;
 	color:#fff;
@@ -710,7 +710,7 @@ ul.footermenu li a {
 }
 
 /* =========================================================== */
-/* Services /* 
+/* Services /*
 ============================================================== */
 .services {
 	margin-top:25px;
@@ -783,7 +783,7 @@ ul.footermenu li a {
 	color: #fff;
 }
 /* =========================================================== */
-/* Carousel /* 
+/* Carousel /*
 ============================================================== */
 .list_carousel {
 	margin-left:-10px;
@@ -820,7 +820,7 @@ ul.footermenu li a {
 	padding-right:4px;
 }
 a.prev,a.next {
-	background:url(../img/carousel_arrows.png) no-repeat #e7402f;
+	background:url(/img/carousel_arrows.png) no-repeat #e7402f;
 	width:24px;
 	height:24px;
 	display:block;
@@ -933,7 +933,7 @@ a.prev span,a.next span {
 	margin-right:20px;
 }
 /* =========================================================== */
-/* Team /* 
+/* Team /*
 ============================================================== */
 .titleborder div {
 	display:inline-block;
@@ -1009,7 +1009,7 @@ a.prev span,a.next span {
 	background-color: #444;
 }
 /* =========================================================== */
-/* Accordion/* 
+/* Accordion/*
 ============================================================== */
 .accordion,.toggle {
 }
@@ -1031,20 +1031,20 @@ a.prev span,a.next span {
 	line-height:18px;
 	display:block;
 	padding:0 0 0 17px;
-	background:url(../img/acplus.png) no-repeat left top;
+	background:url(/img/acplus.png) no-repeat left top;
 }
 .accordion h3.active,.toggle h3.active,.accordion h3:hover,.toggle h3:hover {
 	background:#606060;
 	color:#eee;
 }
 .accordion h3.active span,.toggle h3.active span {
-	background:url(../img/acplus.png) no-repeat left top;
+	background:url(/img/acplus.png) no-repeat left top;
 }
 .accordion h3:hover span,.toggle h3:hover span {
-	background:url(../img/acminus.png) no-repeat left top !important;
+	background:url(/img/acminus.png) no-repeat left top !important;
 }
 .accordion h3.active span {
-	background:url(../img/acminus.png) no-repeat left top !important;
+	background:url(/img/acminus.png) no-repeat left top !important;
 }
 .accordion .accord_cont,.toggle .toggle_cont {
 	padding:5px 0 2px 0;
@@ -1052,7 +1052,7 @@ a.prev span,a.next span {
 }
 
 /* =========================================================== */
-/* Recent Posts /* 
+/* Recent Posts /*
 ============================================================== */
 .recent-posts h4 {
 	font-size:15px;
@@ -1085,7 +1085,7 @@ article .day {
 }
 
 /* =========================================================== */
-/* Skills /* 
+/* Skills /*
 ============================================================== */
 ul#skill {
 	list-style:none;
@@ -1143,7 +1143,7 @@ ul#skill {
 }
 
 /* =========================================================== */
-/* Box Shadow Effects /* 
+/* Box Shadow Effects /*
 ============================================================== */
 .box {
 	background:#f7f7f7;
@@ -1365,7 +1365,7 @@ ul#skill {
 	font-size:20px;
 	margin-top:0;
 }
-/*================================================== * 
+/*================================================== *
 Service Boxes
 * ===============================================*/
 .service-box,.service-box i,.service-box p,.service-box h3 {
@@ -1455,7 +1455,7 @@ color:#e7402f;
 color:#444;
 }
 
-/*================================================== * 
+/*================================================== *
 Flexslider
 * ===============================================*/
 
@@ -1542,7 +1542,7 @@ width:30px;
 height:34px;
 margin:-20px 0 0;
 display:block;
-background:url(../img/bg_direction_nav.png) no-repeat 0 0;
+background:url(/img/bg_direction_nav.png) no-repeat 0 0;
 position:absolute;
 top:50%;
 z-index:10;
@@ -1640,7 +1640,7 @@ cursor:default;
 		right: 0;
 }
 }
-/*================================================== * 
+/*================================================== *
 Panels
 * ===============================================*/
 .panel h1,.panel1 h1 {
@@ -1690,7 +1690,7 @@ left:auto;
 clear:both;
 float: none;
 }
-/*================================================== * 
+/*================================================== *
 Info Boxes
 * ===============================================*/
 .info-box {
@@ -1760,7 +1760,7 @@ margin:6px 0 0;
 .info-content-2 {
 float: left;
 }
-/*================================================== * 
+/*================================================== *
 FAQ
 * ===============================================*/
 .faqs dl {
@@ -1791,7 +1791,7 @@ border:1px solid #f1f1f1;
 }
 .faqs dt {
 font-size:13px;
-background:url(../img/plus.png) 0 4px no-repeat;
+background:url(/img/plus.png) 0 4px no-repeat;
 padding:3px 0 10px 30px;
 position:relative;
 font-weight:normal;
@@ -1820,14 +1820,14 @@ border:1px solid #f0f0f0;
 .nav>li>a:hover,.nav>li>a:focus {
 background-color: #fafafa;
 }
-/*================================================== * 
+/*================================================== *
 Blog
 * ===============================================*/
 #animatedboxes-widget-2 {
 overflow:hidden;
 }
 .widget-title,.widgettitle {
-background:url(../img/dots.gif) repeat-x scroll 0 0 transparent;
+background:url(/img/dots.gif) repeat-x scroll 0 0 transparent;
 background-position:center;
 min-height:0;
 padding-bottom:50px;
@@ -1884,7 +1884,7 @@ padding:4px
 .circledate {
 margin-left:-100px;
 color:#fff;
-background:url(../img/blackcircle.png) no-repeat;
+background:url(/img/blackcircle.png) no-repeat;
 width:80px;
 height:80px;
 float:left;
@@ -1922,7 +1922,7 @@ margin:0
 }
 .post-format {
 background-color:#ddd;
-background-image:url(../img/blog-icons/icon-post-format-standard.png);
+background-image:url(/img/blog-icons/icon-post-format-standard.png);
 background-repeat:no-repeat;
 background-position:50% 50%;
 color:#959393;
@@ -1964,7 +1964,7 @@ color:#FFF;
 margin:10px 0 15px
 }
 .post-year {
-background:url(../img/mdivider.png) top repeat-x;
+background:url(/img/mdivider.png) top repeat-x;
 color:#FFF;
 padding:10px 0 0
 }
@@ -1979,7 +1979,7 @@ margin:10px 0 0
 }
 .continueread a {
 font-size:11px;
-background:url(../img/readmore.png) left bottom no-repeat;
+background:url(/img/readmore.png) left bottom no-repeat;
 padding-left:15px;
 -webkit-transition:all .2s ease,top 0 linear;
 -moz-transition:all .2s ease;
@@ -1989,7 +1989,7 @@ transition:all .2s ease;
 color:#666
 }
 .continueread a:hover {
-background:url(../img/readmore.png) left top no-repeat
+background:url(/img/readmore.png) left top no-repeat
 }
 #sidebar_right {
 margin-top:10px;
@@ -2123,7 +2123,7 @@ color:red
 transition:all 400ms linear
 }
 .posttitledivider {
-background:url(../img/dots.gif) repeat-x;
+background:url(/img/dots.gif) repeat-x;
 height:10px;
 margin:5px 0 10px
 }
@@ -2363,7 +2363,7 @@ font-size:23px;
 display:block;
 line-height: 28px;
 }
-/*================================================== * 
+/*================================================== *
 Testimonials
 * ===============================================*/
 .testimonial {
@@ -2423,7 +2423,7 @@ font-family:open_sanslight;
 font-family:open_sansbold;
 font-size: 18px;
 }
-/*================================================== * 
+/*================================================== *
 Isotope & Masonry
 * ===============================================*/
 .isotope-item {
@@ -2448,7 +2448,7 @@ transition-property:height,width;
 -moz-transition-property:-moz-transform,opacity;
 transition-property:transform,opacity;
 }
-#content {
+#content, .content {
 max-width:1000px;
 z-index:0;
 margin-left:-20px;
@@ -2592,7 +2592,7 @@ opacity:0.9;
 top:57%;
 }
 
-/*================================================== * 
+/*================================================== *
 Pricing Tables
 * ===============================================*/
 .vuzz-pricing-table {
@@ -2710,7 +2710,7 @@ background:#e7402f;
 .popular .vuzz-button.buttonprice {
 background: #e7402f;
 }
-/*=============================================== * 
+/*=============================================== *
   Colorful Boxes
 * ===============================================*/
 .boxolive {
@@ -2783,7 +2783,7 @@ margin-bottom:30px;
 padding:25px 25px 25px 25px;
 }
 
-/*=============================================== * 
+/*=============================================== *
   Contact Form
 * ===============================================*/
 #refresh {
@@ -2817,11 +2817,11 @@ padding:4px;
 margin-bottom:15px;
 }
 
-/*=============================================== * 
+/*=============================================== *
   Fade Effects
 * ===============================================*/
 
-.flexslider .slides img, .textItem, .services h2, .faqstitle, .testimonial h4, .hero-unit, .sectiontitlepost h1, #filter ul li     {    
+.flexslider .slides img, .textItem, .services h2, .faqstitle, .testimonial h4, .hero-unit, .sectiontitlepost h1, #filter ul li     {
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
@@ -2860,7 +2860,7 @@ margin-bottom:15px;
     }
 }​
 
-/*=============================================== * 
+/*=============================================== *
   Spaces
 * ===============================================*/
 .heightauto {
@@ -2908,3 +2908,9 @@ margin-top: 40px;
 
 /*=============================================== *  YOUR OWN STYLES* ===============================================*/
 
+.wraptotop {
+  padding-bottom: 0px;
+}
+.footer {
+  padding-bottom: 0px;
+}

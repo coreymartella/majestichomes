@@ -19,7 +19,7 @@ body.boxed div.body {
   background-color:#cfb550;
 }
 #search a {
-  background:#cfb550 url(../img/part-btn-search.png) no-repeat center center;
+  background:#cfb550 url(/img/part-btn-search.png) no-repeat center center;
 }
 .dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-submenu:hover>a,.dropdown-submenu:focus>a {
   background-color:#cfb550;
@@ -31,7 +31,7 @@ body.boxed div.body {
   background-color:#cfb550;
 }
 a.prev,a.next {
-  background:url(../img/carousel_arrows.png) no-repeat #cfb550;
+  background:url(/img/carousel_arrows.png) no-repeat #cfb550;
 }
 a.next {
   background-position:-22px 0
