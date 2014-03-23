@@ -105,7 +105,6 @@
 		pp_slideshow;
 
 		doresize = true, scroll_pos = _get_scroll();
-    console.log("matched objects", matchedObjects.length);
 		// Window/Keyboard events
 		$(window).unbind('resize.prettyphoto').bind('resize.prettyphoto',function(){ _center_overlay(); _resize_overlay(); });
 
