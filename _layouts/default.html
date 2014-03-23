@@ -13,6 +13,7 @@
 <link href="css/icons.css" rel="stylesheet">
 <link href="css/skin-majestic.css" rel="stylesheet">
 <link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/prettyPhoto.css" rel="stylesheet">
 <link href="css/overrides.css" rel="stylesheet">
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -52,9 +53,6 @@
               {{ site.email }}
             </a>
           </div>
-          <div class="infoaddress">
-             {{ site.mailing_address }}
-          </div>
         </div>
         <div class="clearfix"></div>
       </div>
@@ -67,9 +65,9 @@
             <ul id="nav" class="nav">
               <li><a href="#about_us">About Us</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li class="divider-vertical"></li>
               <li><a href="#current_development">Current Development</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#portfolio">Portfolio</a></li>
               <li class="divider-vertical"></li>
               <li><a href="#testimonials">Testimonials</a></li>
               <li class="divider-vertical"></li>
@@ -135,7 +133,7 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
-<script src="js/prettyphoto.js"></script>
+<script src="js/prettyPhoto.js"></script>
 <!-- CALL CAMERA SLIDER -->
 <script>
   jQuery(function(){
@@ -232,43 +230,50 @@ $(document).ready(function(){
         masonry: { columnWidth: $isotope3.width() / 3 }
       });
     });
+    var $isotope_gallery = $('.isotope_gallery')
+    // initialize Isotope
+
+    $isotope_gallery.imagesLoaded(function(){
+      $isotope_gallery.isotope({
+        // options...
+        resizable: false, // disable normal resizing
+        masonry: { gutterWidth: 2 }
+      });
+    });
+    // update columnWidth on window resize
+    $(window).smartresize(function(){
+      $isotope_gallery.isotope({
+        masonry: { gutterWidth: 2 }
+      });
+    });
 
     //FILTER
-    $('#filter a').click(function(){
-      var selector = $(this).attr('data-filter');
-      $container.isotope({
-      filter: selector,
-      animationOptions: {
-       duration: 750,
-       easing: 'linear',
-       queue: false,
-       }
-      });
-      return false;
-    });
+    // $('#filter a').click(function(){
+    //   var selector = $(this).attr('data-filter');
+    //   $isotope_gallery.isotope({
+    //   filter: selector,
+    //   animationOptions: {
+    //    duration: 750,
+    //    easing: 'linear',
+    //    queue: false,
+    //    }
+    //   });
+    //   $(document).ready(function(){
+    //       $("a[data-gal^='prettyPhoto']").prettyPhoto({social_tools:'', animation_speed: 'normal' , theme: 'dark_rounded'});
+    //   });
+    //   return false;
+    // });
     $('#filter a').click(function (event) {
       $('a.selected').removeClass('selected');
       var $this = $(this);
       $this.addClass('selected');
       var selector = $this.attr('data-filter');
-      $container.isotope({
+      $isotope_gallery.isotope({
          filter: selector
+      }, function(){
+        $(".isotope-item:not(.isotope-hidden) a[data-gal^='prettyPhoto']").prettyPhoto({social_tools:'', animation_speed: 'normal' , theme: 'dark_rounded'});
       });
       return false;
-    });
-    });
-    //ROLL ON HOVER
-    $(function() {
-    $(".roll").css("opacity","0");
-    $(".roll").hover(function () {
-    $(this).stop().animate({
-    opacity: .8
-    }, "slow");
-    },
-    function () {
-    $(this).stop().animate({
-    opacity: 0
-    }, "slow");
     });
   });
 </script>

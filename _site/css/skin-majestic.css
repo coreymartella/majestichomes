@@ -1,3 +1,7 @@
+/*
+blue: "#002366"
+gold: "#cfb550"
+*/
 @media screen and (max-width:800px) {
   .tinynav {
     background:#cfb550;
@@ -7,7 +11,7 @@ body.boxed div.body {
   border-top:5px solid #cfb550;
 }
 .testimonial-name, .service-box.black .circleicon i, .service-box.featured .circleicon i, .service-box:hover i, .footerlogo47, .primarycolor, a, a:hover {
-  color:#cfb550;
+  color:#002366;
 }
 .cameraContents .camera_caption span, .popular .vuzz-button.buttonprice, .popular .vuzz-button, .popular .vuzz-pricing-per, .popular .vuzz-pricing-cost, .captionicons, a.tagcloud:hover,.tagcloud a:hover, .service-box.featured , .service-box:hover, #skill i, article .day, .totop, .totop:hover, .primarybg {
   background:#cfb550;
@@ -49,3 +53,17 @@ color: #cfb550 !Important;
 border-top:#cfb550 3px solid;
 }
 ::selection {background:#002366;color:#fff;}
+
+.isotope_gallery .item {
+  float: left;
+  width: 112px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+.isotope_gallery .photo2 {
+  /*width: 196px;*/
+}
+.isotope_gallery img {
+  width: 100%;
+  display: block;
+}
