@@ -440,7 +440,7 @@ $(window).smartresize(function(){
     masonry: { columnWidth: $isotope4.width() / 4 }
   });
 });
-var $isotope4 = $('.isotope3')
+var $isotope3 = $('.isotope3')
 // initialize Isotope
 $isotope3.isotope({
   // options...
@@ -453,6 +453,22 @@ $(window).smartresize(function(){
   $isotope3.isotope({
     // update columnWidth to a percentage of container width
     masonry: { columnWidth: $isotope3.width() / 3 }
+  });
+});
+});
+var $isotope2 = $('.isotope2')
+// initialize Isotope
+$isotope2.isotope({
+  // options...
+  resizable: false, // disable normal resizing
+  // set columnWidth to a percentage of container width
+  masonry: { columnWidth: $isotope2.width() / 2 }
+});
+// update columnWidth on window resize
+$(window).smartresize(function(){
+  $isotope2.isotope({
+    // update columnWidth to a percentage of container width
+    masonry: { columnWidth: $isotope2.width() / 2 }
   });
 });
 });

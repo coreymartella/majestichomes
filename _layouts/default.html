@@ -234,6 +234,22 @@ $(document).ready(function(){
         masonry: { columnWidth: $isotope3.width() / 3 }
       });
     });
+    var $isotope2 = $('.isotope2')
+    // initialize Isotope
+    $isotope2.isotope({
+      // options...
+      resizable: false, // disable normal resizing
+      // set columnWidth to a percentage of container width
+      masonry: { columnWidth: $isotope2.width() / 2 }
+    });
+    // update columnWidth on window resize
+    $(window).smartresize(function(){
+      $isotope2.isotope({
+        // update columnWidth to a percentage of container width
+        masonry: { columnWidth: $isotope2.width() / 2 }
+      });
+    });
+
     var $isotope_gallery = $('.isotope_gallery')
     // initialize Isotope
 
