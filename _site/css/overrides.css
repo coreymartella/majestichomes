@@ -21,4 +21,5 @@
 }
 ul.bullets {
   list-style: disc inside;
+  margin-bottom: 10px;
 }
