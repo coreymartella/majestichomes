@@ -725,6 +725,7 @@ $(document).ready(function(){
       }, function(){
         $(".isotope-item:not(.isotope-hidden) a[data-gal^='prettyPhoto']").prettyPhoto({social_tools:'', animation_speed: 'normal' , theme: 'dark_rounded'});
       });
+      $('body').scrollspy("refresh")
       return false;
     });
     $('#filter a.selected').trigger("click")

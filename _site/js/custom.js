@@ -133,7 +133,7 @@ $(window).load(function() {
     $('body,html').animate({
         scrollTop: scrollPos
     }, 500);
-    (".navbar li").removeClass("active")
+    $(".navbar li").removeClass("active")
     el.parents("li:first").addClass("active")
     return false;
   });
