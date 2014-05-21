@@ -23,7 +23,3 @@ ul.bullets {
   list-style: disc inside;
   margin-bottom: 10px;
 }
-.anchor {
-  position: relative;
-  top: -50px;
-}
