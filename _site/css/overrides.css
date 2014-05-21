@@ -19,3 +19,6 @@
 .affix .row-nav {
   margin: 0;
 }
+ul.bullets {
+  list-style: disc inside;
+}
