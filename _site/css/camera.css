@@ -1094,10 +1094,11 @@ font-size: 14px;
 
 .cameraContents .camera_caption div {
 background: none;
-margin-top:-70%;
+/*margin-top:-80%;*/
+margin-bottom:30px;
 }
 .camera_caption{
-left: 5%;
+left: 20px;
 width:45%;
 display:inline;
 }

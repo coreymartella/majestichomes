@@ -6,16 +6,28 @@
 }
 
 body.boxed {
-	background-image: url(/img/bg/pic1.jpg);
-	background-attachment: fixed;
+  position: relative;
+  padding: 40px 0 50px;
+
+  /* Stretch single image BG*/
+  /*
+  background-image: url(/img/bg/pic1.jpg);
+  background-attachment: fixed;
+  background-position: 49% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  padding: 40px 0 50px;
+  */
+
+  /* Pattern BG */
+	background-attachment: local;
 	background-position: 49% 50%;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	position: relative;
-	padding: 40px 0 50px;
+	background-repeat: repeat repeat;
+	background-size: auto;
 }
 
 body.boxed div.body {

@@ -1,24 +1,29 @@
 ---
 layout: default
 ---
+<script>
+  var query = {"bg": 23}
+  location.search.substr(1).split("&").forEach(function(item) {query[item.split("=")[0]] = item.split("=")[1]})
+  document.write('<style>body.boxed {background-image: url(/img/bg/' + query['bg'] + '.png);}</style>');
+</script>
 <div class="row-fluid">
 	<div class="camera_wrap camera_emboss" id="camera_wrap_4">
     <div data-src="/img/gallery/slides/slide1.jpg">
       <div class="camera_caption fadeFromTop">
         <h1>We Build More Than Homes</h1>
-        <span>We Build Trust. We Build Your Ideas. We Build Memorable Journeys</span>
+        <span>We Build Trust. We Build Your Ideas. We Build Memorable Journeys.</span>
       </div>
     </div>
     <div data-src="/img/gallery/slides/slide2.jpg">
       <div class="camera_caption fadeFromTop">
         <h1>We Build More Than Homes</h1>
-        <span>We Build Opportunities.<br>We Build in 3D: Customer, Community, Environment</span>
+        <span>We Build Opportunities.<br>We Build in 3D: Customer, Community, Environment.</span>
       </div>
     </div>
     <div data-src="/img/gallery/slides/slide3.jpg">
       <div class="camera_caption fadeFromTop">
         <h1>We Build More Than Homes</h1>
-        <span>We Build Dialogue.<br>We Build Friendships</span>
+        <span>We Build Dialogue.<br>We Build Friendships.</span>
       </div>
     </div>
   </div>
