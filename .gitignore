@@ -4,3 +4,4 @@ img/gallery/original
 _site/img/gallery/original
 _plugins
 .DS_Store
+.bundle
