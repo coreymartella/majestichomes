@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/home/rails/.rvm/wrappers/ruby-2.2.2@majestichomes/ruby
 oldrev, newrev = ARGV
 
 def run(cmd)
