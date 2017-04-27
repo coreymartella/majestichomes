@@ -5,3 +5,4 @@ _site/img/gallery/original
 _plugins
 .DS_Store
 .bundle
+log
