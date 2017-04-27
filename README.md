@@ -1,3 +1,9 @@
+## TODO
+* [ ] Blackberry priv scrolling
+* [ ] Current Development ==> Communities ==> Innerkip/Kitchener
+* [ ] Why Us Changes less options 
+* [ ] Registration for Innerkip
+
 ## Image Generation/gallery
 
 Take original image and resize it to max of 1024x1024:
