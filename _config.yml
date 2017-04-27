@@ -7,3 +7,4 @@ mailing_address: 55 Newcastle Drive Kitchener, ON N2R 1X2
 blue: "#002366"
 gold: "#cfb550"
 testimonial_columns: 2
+exclude: [vendor]
