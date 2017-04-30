@@ -1,0 +1,33 @@
+---
+layout: default
+title: "- River Ridge"
+---
+<script>
+  var query = {"bg": 23}
+  location.search.substr(1).split("&").forEach(function(item) {query[item.split("=")[0]] = item.split("=")[1]})
+  document.write('<style>body.boxed {background-image: url(/img/bg/' + query['bg'] + '.png);}</style>');
+</script>
+ <div class="row-fluid anchor" id="river_ridge">
+   <div class="span12">
+     <div class="titleborder">
+       <div>
+          Communities: River Ridge
+       </div>
+     </div>
+   </div>
+ </div>
+ <div class="row-fluid">
+    <!-- from http://maps.googleapis.com/maps/api/staticmap?center=43.465407,-80.471814&markers=43.495407,-80.471814&zoom=10&size=300x250&sensor=false -->
+   <div class="span3">
+      <a data-gal="prettyPhoto[development]" href="/img/development/map_large.png" class="text-center"><img src="/img/development/map_thumb.png" alt="Subdivision Location"><small>Subdivision Location</small></a>
+   </div>
+   <div class="span3">
+      <a data-gal="prettyPhoto[development]" href="/img/development/river_ridge_aerial_large.jpg" class="text-center"><img src="/img/development/river_ridge_aerial_thumb.jpg" alt="Subdivision Aerial View"><small>Subdivision Aerial View</small></a>
+   </div>
+   <div class="span3">
+      <a data-gal="prettyPhoto[development]" href="https://www.youtube.com/watch?v=phg_ckUxyo0" class="text-center"><img src="/img/development/flyover.jpg" width="217" height="180"><small>Fly Over our Condor Street homes</small></a>
+   </div>
+   <div class="span3">
+      <a data-gal="prettyPhoto[development]" href="/img/development/lots_large.png" class="text-center"><img src="/img/development/lots_thumb.png" alt="Subdivision Lots"><small>Developed Lots</small></a>
+   </div>
+ </div>

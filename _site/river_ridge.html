@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Majestic Homes {{ page.title }}</title>
+<title>Majestic Homes - River Ridge</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -43,14 +43,14 @@
             <!-- <li><a href="#"><i class="icon-pinterest"></i></a></li> -->
           </ul>
           <div class="infophone">
-            <a href="tel:1-{{ site.phone_number }}">
+            <a href="tel:1-519-729-2728">
               <i class="icon-phone"></i>
-              {{ site.phone_number }}
+              519-729-2728
             </a>
             &nbsp;
-            <a href="mailto:{{ site.email }}">
+            <a href="mailto:info@majestichomes.ca">
               <i class="icon-envelope"></i>
-              {{ site.email }}
+              info@majestichomes.ca
             </a>
             <br>
             Kitchener-Waterloo Custom Home Builder
@@ -93,7 +93,35 @@
   </div>
   <!-- /end header -->
   <div class="container">
-    {{content}}
+    <script>
+  var query = {"bg": 23}
+  location.search.substr(1).split("&").forEach(function(item) {query[item.split("=")[0]] = item.split("=")[1]})
+  document.write('<style>body.boxed {background-image: url(/img/bg/' + query['bg'] + '.png);}</style>');
+</script>
+ <div class="row-fluid anchor" id="river_ridge">
+   <div class="span12">
+     <div class="titleborder">
+       <div>
+          Communities: River Ridge
+       </div>
+     </div>
+   </div>
+ </div>
+ <div class="row-fluid">
+    <!-- from http://maps.googleapis.com/maps/api/staticmap?center=43.465407,-80.471814&markers=43.495407,-80.471814&zoom=10&size=300x250&sensor=false -->
+   <div class="span3">
+      <a data-gal="prettyPhoto[development]" href="/img/development/map_large.png" class="text-center"><img src="/img/development/map_thumb.png" alt="Subdivision Location"><small>Subdivision Location</small></a>
+   </div>
+   <div class="span3">
+      <a data-gal="prettyPhoto[development]" href="/img/development/river_ridge_aerial_large.jpg" class="text-center"><img src="/img/development/river_ridge_aerial_thumb.jpg" alt="Subdivision Aerial View"><small>Subdivision Aerial View</small></a>
+   </div>
+   <div class="span3">
+      <a data-gal="prettyPhoto[development]" href="https://www.youtube.com/watch?v=phg_ckUxyo0" class="text-center"><img src="/img/development/flyover.jpg" width="217" height="180"><small>Fly Over our Condor Street homes</small></a>
+   </div>
+   <div class="span3">
+      <a data-gal="prettyPhoto[development]" href="/img/development/lots_large.png" class="text-center"><img src="/img/development/lots_thumb.png" alt="Subdivision Lots"><small>Developed Lots</small></a>
+   </div>
+ </div>
   </div>
   <!-- FOOTER BEGIN
 ================================================== -->
@@ -114,14 +142,14 @@
           <div class="pull-right smaller">
             Questions?
             Call us at
-            <a href="tel:1-{{ site.phone_number }}">
+            <a href="tel:1-519-729-2728">
               <i class="icon-phone"></i>
-              {{ site.phone_number }}
+              519-729-2728
             </a>
             or email
-            <a href="mailto:{{ site.email }}">
+            <a href="mailto:info@majestichomes.ca">
               <i class="icon-envelope"></i>
-              {{ site.email }}
+              info@majestichomes.ca
             </a>
             anytime!
           </div>
